@@ -1,0 +1,29 @@
+h1 {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+    /* margin-left: 10px; */
+    transform: translate(-10vw, calc(-40vh + 212px));
+    background-color: rgb(10, 15, 23);
+    border: 5px solid rgb(10, 15, 23);
+    width: 16.2rem;
+    z-index: 100;
+}
+
+.container {
+    height: 75vh;
+    width: 50vw;
+    border: 2px solid white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 25vh;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 25vh;
+    right: 5vw;
+}

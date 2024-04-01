@@ -1,0 +1,81 @@
+div.square {
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgb(137, 171, 224);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+div.row {
+    width: 310px;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+div.game {
+    transform: translateY(-1rem);
+}
+
+@keyframes squish {
+    0% { transform: rotate3d(0); }
+    50% { transform: rotate3d(1, 0, 0, 90deg); }
+    100% { transform: rotate3d(0); }
+}
+
+@keyframes turn-green {
+    0% { background-color: rgb(10, 15, 23);}
+    100% { background-color: rgb(13, 93, 78);}
+}
+@keyframes turn-yellow {
+    0% { background-color: rgb(10, 15, 23);}
+    100% { background-color: rgb(170, 168, 11);}
+}
+@keyframes turn-grey {
+    0% { background-color: rgb(10, 15, 23);}
+    100% { background-color: rgb(42, 44, 48);}
+}
+
+@keyframes appear {
+    0% { visibility: hidden; }
+    100% {visibility: shown; }
+}
+
+.animation-green {
+    animation: squish 0.5s linear, turn-green 0.25s 1 steps(1) forwards;
+}
+
+.animation-yellow {
+    animation: squish 0.5s linear, turn-yellow 0.25s 1 steps(1) forwards;
+}
+
+.animation-grey {
+    animation: squish 0.5s linear, turn-grey 0.25s 1 steps(1) forwards;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.appear {
+    animation: appear 2.5s steps(1) forwards;
+}
+
+/* lets suppose for a second that it doesnt really matter that p has a larger font size than h3. because i am too lazy to change it. */
+p {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2rem;
+}
+
+h3 {
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5rem;
+    margin-right: 10px;
+    float: right;
+    margin-top: 5px;
+}
